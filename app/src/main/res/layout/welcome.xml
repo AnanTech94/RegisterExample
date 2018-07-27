@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup"
+    android:orientation="vertical"
+
+    >
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Welcome"
+        android:textSize="30dp"
+        android:textStyle="bold|italic" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+
+        <TextView
+            android:id="@+id/emailLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Your Email: "
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/userEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/emailLabel"
+            android:background="#626562"
+            android:gravity="center"
+            android:minWidth="150dp"
+            android:padding="16dp"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/passLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailLabel"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Your Password: "
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/userPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userEmail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/passLabel"
+            android:background="#626562"
+            android:gravity="center"
+            android:minWidth="150dp"
+            android:padding="16dp"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="14dp" />
+
+        <CheckBox
+            android:id="@+id/passShowHide"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_alignStart="@+id/userPass"
+            android:layout_below="@+id/userPass"
+            android:text="Show Password"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/mobileLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passLabel"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Your Mobile No.: "
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/userMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passShowHide"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/mobileLabel"
+            android:background="#626562"
+            android:gravity="center"
+            android:minWidth="150dp"
+            android:padding="16dp"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+</LinearLayout>
